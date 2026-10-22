@@ -13,6 +13,6 @@ RUN pip install --no-cache-dir --upgrade pip -i https://mirrors.aliyun.com/pypi/
     pip install --no-cache-dir --no-deps -i https://mirrors.aliyun.com/pypi/simple/ \
       "qwen-asr"
 
-COPY handler.py /app/handler.py
+COPY rp_handler.py /app/rp_handler.py
 
-CMD ["python3", "-u", "handler.py"]
+CMD ["python3", "-u", "rp_handler.py"]
